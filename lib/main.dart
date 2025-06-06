@@ -9,11 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'App Contador',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const ContadorPage(),
-    );
+    return MaterialApp(title: 'App Contador', home: const ContadorPage());
   }
 }
 
@@ -72,36 +68,36 @@ class _ContadorPageState extends State<ContadorPage> {
             FloatingActionButton(
               heroTag: 'sumar',
               onPressed: _sumar,
-              backgroundColor: const Color.fromARGB(255, 193, 152, 233),
+              backgroundColor: const Color.fromARGB(255, 228, 148, 192),
               child: const Icon(Icons.add),
               tooltip: 'Sumar',
             ),
             FloatingActionButton(
               heroTag: 'restar',
               onPressed: _restar,
-              backgroundColor: const Color.fromARGB(255, 235, 141, 134),
+              backgroundColor: const Color.fromARGB(255, 222, 134, 128),
               child: const Icon(Icons.remove),
               tooltip: 'Restar',
             ),
             FloatingActionButton(
               heroTag: 'resetear',
               onPressed: _resetear,
-              backgroundColor: const Color.fromARGB(255, 249, 251, 143),
+              backgroundColor: const Color.fromARGB(255, 122, 186, 238),
               child: const Icon(Icons.refresh),
               tooltip: 'Resetear',
             ),
             FloatingActionButton(
               heroTag: 'multiplicar',
               onPressed: _multiplicar,
-              backgroundColor: const Color.fromARGB(255, 183, 141, 215),
+              backgroundColor: const Color.fromARGB(255, 220, 175, 108),
               child: const Icon(Icons.clear),
               tooltip: 'Multiplicar',
             ),
             FloatingActionButton(
               heroTag: 'dividir',
               onPressed: _dividir,
-              backgroundColor: const Color.fromARGB(255, 129, 132, 224),
-              child: const Icon(Icons.horizontal_split),
+              backgroundColor: const Color.fromARGB(255, 199, 116, 214),
+              child: const Icon(Icons.border_horizontal),
               tooltip: 'Dividir',
             ),
           ],
